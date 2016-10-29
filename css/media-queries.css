@@ -1,0 +1,614 @@
+@media (min-width: 1151px) and (max-width: 2000px){
+
+  /*works*/
+
+  .work-item {
+    width: 20%;
+  }
+  .work-item > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/*============================================================
+  For Small Desktop
+==============================================================*/
+
+@media (min-width: 980px) and (max-width: 1150px) {
+
+/* slider */
+.carousel-caption p {
+  font-size: 14px;
+}
+/* works */
+
+/*.work-item {
+  width: 25%;
+}*/
+
+/* team */
+
+.member-thumb {
+  width: auto;
+}
+
+}
+
+
+/*============================================================
+  Tablet (Portrait) Design for a width of 768px
+==============================================================*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+/* slider */
+
+.carousel-caption h2 {
+  font-size: 55px;
+}
+
+.carousel-caption p {
+  font-size: 15px;
+}
+
+
+.navbar-nav li a{
+    margin-right: 10px;
+  }
+/* services */
+
+/*.service-item {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 325px;
+}
+
+.service-icon {
+  float: none;
+  margin: 0 auto 15px;
+  text-align: center;
+  width: 50px;
+}
+
+.service-desc {
+  margin-left: 0;
+  position: relative;
+  top: 0;
+}*/
+
+/* works */
+
+.work-item {
+  width: 33%;
+}
+
+/* team */
+
+.member-thumb .overlay h5 {
+  margin: 25px 0;
+}
+
+.member-thumb {
+  margin: 0 auto;
+}
+
+/* fatcs */
+
+/*#facts {
+background-position: center top !important;
+}
+.counters-item {
+  margin-bottom: 30px;
+}
+
+.counters-item i {
+  margin: 0 0 15px;
+}
+
+.counters-item strong {
+  font-size: 45px;
+}
+*/
+/* contact */
+
+/*.contact-form .name-email input {
+  margin-right: 0;
+  width: 100%;
+}
+
+.footer-social {
+  margin-top: 45px;
+}
+*/
+
+/* footer */
+
+/*.footer-single {
+  margin-bottom: 30px;
+}
+*/
+
+.con {
+  width: 75%;
+}
+}
+
+/*============================================================
+  Mobile (Portrait) Design for a width of 320px
+==============================================================*/
+
+@media only screen and (max-width: 767px) {
+
+.sec-title h2 {
+  font-size: 20px;
+}
+
+.sec-sub-title p {
+  font-size: 14px;
+}
+
+/* slider */
+
+.carousel-caption h2 {
+  font-size: 35px;
+}
+
+.carousel-caption h3 {
+  font-size: 22px;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 5%;
+}
+
+.insta {
+  width: 100%;
+}
+
+/* services */
+
+/*.service-item {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 280px;
+}
+
+.service-icon {
+  float: none;
+  margin: 0 auto 15px;
+  text-align: center;
+  width: 50px;
+}
+
+.service-desc {
+  margin-left: 0;
+  position: relative;
+  top: 0;
+}*/
+
+/* works */
+
+.work-item {
+  left: 0% !important;
+  width: 50%;
+}
+
+/* team */
+
+.team-member {
+  margin-bottom: 30px;
+}
+
+.team-member:last-child {
+  margin-bottom: 0;
+}
+
+.member-thumb {
+  margin: 0 auto;
+}
+
+/* facts */
+
+/*#facts {
+background-position: center top !important;
+}
+
+.counters-item {
+  margin-bottom: 30px;
+}
+*/
+/* contact */
+/*.contact-address {
+  margin-bottom: 30px;
+}
+
+.footer-social {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-social li {
+  display: inline-block;
+}
+
+.footer-social li a {
+  margin: 0 10px;
+}
+*/
+/* footer */
+
+/*.footer-single {
+  margin-bottom: 30px;
+}
+*/
+
+.con {
+  width: 75%;
+}
+}
+
+/*============================================================
+  Mobile (Landscape) Design for a width of 480px
+==============================================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.somaiyalogo {
+  margin-top: -12%;
+  width: 30%;
+}
+
+.eve .rink {
+  margin-top: 50px;
+}
+
+.sec-title h1 {
+  margin-top: -5%;
+}
+
+.sec-title h2 {
+  font-size: 45px;
+}
+
+.gen {
+  margin-top: 5%;
+}
+
+.carousel-caption .left {
+  width: 100%;
+}
+.carousel-caption p {
+  font-size: 12px;
+}
+/* services */
+
+/*.service-item {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 325px;
+}
+
+.service-icon {
+  float: none;
+  margin: 0 auto 15px;
+  text-align: center;
+  width: 50px;
+}
+
+.service-desc {
+  margin-left: 0;
+  position: relative;
+  top: 0;
+}
+*/
+/* works */
+
+.work-item {
+  left: inherit !important;
+  width: 50%;
+}
+.insta {
+  width: 50%;
+  padding-left: -100%;
+}
+
+.social-links {
+  margin-left: -5%;
+}
+.social-links li a {
+  margin: 0 -5px;
+}
+.navbar-nav a{
+    width: 175px;
+    height: 32px;
+    z-index: 9999;
+    border-radius: 0px;
+    min-width: 50px;
+    text-align: center;
+    background: #38404A;
+    border-bottom: 0.5px solid #ddd;
+    border: 1px solid #ddd;
+  }
+.navbar-nav a:first-child{
+    border-top: 0.5px solid #ddd;
+    margin: 0;
+  } 
+  .navbar-nav li.active a{
+    border-radius:0px;
+  }
+  .eve .chesss {
+    margin-left: 65px;
+    margin-top: 50px;
+  }
+  .eve .basketball {
+    margin-left: 30px;
+  }
+  .eve .carrom {
+    margin-left: 40px;
+    margin-top: 70px;
+  }
+  .eve .badm {
+    margin-left: 20px;
+  }
+  .eve .athletic {
+    margin-left: 50px;
+    margin-top: 60px;
+  }
+  .eve .tennn {
+    margin-left: 50px;
+  }
+  .eve .football {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .imgleft {
+    margin-left: -8%;
+  }
+
+  #about .imac, #mascot .imac{
+    margin-left: 50px;
+  }
+  #about .web_content, #mascot .web_content {
+    text-align: center;
+  }
+  #about .web_content h1, #mascot .web_content h1{
+    font-size: 20px;
+  }
+  #about .web_content h4, #mascot .web_content h4{
+    font-size: 14px;
+  }
+  #about .web_content p, #mascot .web_content p{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  #about .web_content a, #mascot .web_content a{
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .sec-title h2 {
+    font-size: 14px;
+  }
+
+  .carousel-caption p {
+    font-size: 10px;
+  }
+  .navbar-nav a:first-child{
+    border-top: 1px solid #ddd;
+    margin: 0;
+  } 
+  .navbar-nav li.active a{
+    border-radius:0px;
+  }
+  .insta {
+    width: 10%;
+  }
+  .carousel-caption {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
+
+  .phone-text {
+    width: 160%;
+    margin-left: -20%;
+    margin-top: -15%;
+  }
+
+  .phone-img {
+    width: 90%;
+    margin-top: -5%;
+  }
+
+  .phone-reg {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .phone-lolo {
+    margin-top: -10%;
+  }
+  .phone .social-links {
+    margin-left: -30%;
+  }
+
+  .eve .rink {
+    margin-top: 30px;
+  }
+  .eve .fence {
+    margin-top: 20px;
+  }
+  .eve .chesss {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .eve .basketball {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .eve .carrom {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .eve .badm {
+    margin-left: 10px;
+  }
+  .eve .athletic {
+    margin-left: 30px;
+  }
+  .eve .football {
+    margin-left: 40px;
+  }
+  .eve .tennn {
+    margin-left: 40px;
+  }
+  .somaiyalogo {
+    width: 30%;
+    margin-top: -15%;
+  }
+.tab-content {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .somaiyalogo {
+    margin-top: -20%;
+    width: 30%;
+  }
+  .kjsce-text {
+    width: 110%;
+  }
+  .phone-text {
+    width: 100%;
+  }
+  #about .web_content h1, #mascot .web_content h1{
+    font-size: 16px;
+  }
+  #about .web_content p, #mascot .web_content p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .eve .rink {
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  .eve .rinkf {
+    margin-left: 10px;
+  }
+  .eve .chesss {
+    margin-left: 35px;
+    margin-top: 25px;
+  }
+  .eve .basketball {
+    margin-left: 20px;
+  }
+  .eve .carrom {
+    margin-left: 30px;
+  }
+  .eve .badm {
+    margin-left: 10px;
+  }
+  .eve .athletic {
+    margin-left: 15px;
+    width: 60%;
+    margin-top: 15px;
+  }
+  .eve .football {
+    margin-left: 30px;
+  }
+  .eve .tennn {
+    margin-left: 25px;
+  }
+  .pill {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 568px) {
+  .navbar-nav a{
+    width: 175px;
+    height: 32px;
+    z-index: 9999;
+    border-radius: 0px;
+    min-width: 50px;
+    text-align: center;
+    background: #38404A;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+  }
+  .navbar-nav a:first-child{
+    border-top: 1px solid #ddd;
+    margin: 0;
+  } 
+  .navbar-nav li.active a{
+    border-radius:0px;
+  }
+  .carousel-caption p {
+    font-size: 10px;
+  }
+  .insta {
+    width: 50%;
+  }
+  .carousel-caption {
+    margin-top: 2%;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
+
+  .phone-text {
+    width: 100%;
+    margin-left: -5%;
+    margin-top: -15%;
+  }
+
+  .phone-img {
+    width: 90%;
+    margin-top: -5%;
+  }
+
+  .phone-reg {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .phone-lolo {
+    margin-top: -10%;
+  }
+
+  .phone .social-links {
+    margin-left: -25%;
+  }
+  .social-links li a {
+  margin: 0 6px;
+}
+
+.gen {
+  margin-top: 5%;
+  padding-right: 10%;
+}
+.rules {
+  width: 130%;
+}/*
+.eve .chesss {
+    margin-left: 35px;
+    margin-top: 25px;
+  }*/
+}

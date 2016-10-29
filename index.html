@@ -1,0 +1,2273 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>SKREAM '16</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="K.J. Somaiya, Somaiya, KJSCE SKREAM, SKREAM, skream, Vidya Vihar , kj somaiya sports fest, skream16">
+    <meta name="description" content="Annual sports festival of K.J. Somaiya College of Engineering, Vidyavihar, Mumbai">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    
+ <link rel="icon" href="images/favicon.png" type="image/png">      
+  <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+
+       
+
+        <!-- Bootstrap Core CSS -->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style type="text/css">
+        #maps {
+        width: 100%;
+        height: 400px;
+      }
+
+@font-face {
+  font-family: seg;
+  src: url(segoe-ui/segoeui.ttf);
+}
+@font-face {
+  font-family: seg_bold;
+  src: url(segoe-ui/segoeuib.ttf);
+}
+
+
+#events {
+    background-color: #384e87;
+    /*background-repeat: repeat; */
+    background-image: url(images/events_bg.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 5px auto;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.4s linear 0.1s;
+  -webkit-transition: all 0.4s linear 0.1s;
+  -moz-transition: all 0.4s linear 0.1s;
+  -o-transition: all 0.4s linear 0.1s;
+  -ms-transition: all 0.4s linear 0.1s;
+}
+
+.bar:first-child { margin-top: 45px; }
+
+.wrap {
+  position: absolute;
+  top: 340%;
+  left: 46%;
+  margin: auto;
+  width: 150px;
+  height: 100px;
+}
+
+.wrap .blob {
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+  z-index: 10;
+  background-color: #F44336;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -o-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -ms-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+.wrap .blob[for="checking"] {
+  z-index: 30;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.5s ease-in-out 0.2s;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.2s;
+  -moz-transition: transform 0.5s ease-in-out 0.2s;
+  -o-transition: transform 0.5s ease-in-out 0.2s;
+  -ms-transition: transform 0.5s ease-in-out 0.2s;
+}
+
+.wrap .blob:not([for="checking"]) {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.wrap .blob:not([for="checking"]):hover {
+  color: #F44336;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(2) {
+  margin-left: 0px;
+  margin-top: -150px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(3) {
+  margin-top: -95px;
+  margin-left: 130px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(4) {
+  margin-top: 40px;
+  margin-left: 150px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(5) {
+  margin-top: 150px;
+  margin-left: 80px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(6) {
+  margin-top: 150px;
+  margin-left: -80px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(7) {
+  margin-top: 40px;
+  margin-left: -150px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(8) {
+  margin-top: -95px;
+  margin-left: -130px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(9) {
+  margin-top: -250px;
+  margin-left: 150px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(10) {
+  margin-left: 290px;
+  margin-top: -30px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(11) {
+  margin-left: 250px;
+  margin-top: 170px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(12) {
+  margin-left: 0px;
+  margin-top: 270px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(13) {
+  margin-left: -250px;
+  margin-top: 170px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(14) {
+  margin-left: -290px;
+  margin-top: -30px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap > #checking:checked ~ .blob:nth-child(15) {
+  margin-left: -150px;
+  margin-top: -250px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+}
+.wrap > #checking:checked ~ .blob[for="checking"] #events .evn h1 {
+  display: none;
+}
+.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(1) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  margin-top: 55px;
+}
+
+.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  margin-top: -10px;
+}
+
+.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(3) { opacity: 0; }
+ @keyframes 
+harlem {  0% {
+ transform: translate(0);
+ -webkit-transform: translate(0);
+ -moz-transform: translate(0);
+ -o-transform: translate(0);
+ -ms-transform: translate(0);
+}
+ 25% {
+ transform: translate(5px, 5px);
+ -webkit-transform: translate(5px, 5px);
+ -moz-transform: translate(5px, 5px);
+ -o-transform: translate(5px, 5px);
+ -ms-transform: translate(5px, 5px);
+}
+ 50% {
+ transform: translate(-5px, -5px);
+ -webkit-transform: translate(-5px, -5px);
+ -moz-transform: translate(-5px, -5px);
+ -o-transform: translate(-5px, -5px);
+ -ms-transform: translate(-5px, -5px);
+}
+ 75% {
+ transform: translate(2px, 2px);
+ -webkit-transform: translate(2px, 2px);
+ -moz-transform: translate(2px, 2px);
+ -o-transform: translate(2px, 2px);
+ -ms-transform: translate(2px, 2px);
+}
+ 100% {
+ transform: translate(0);
+ -webkit-transform: translate(0);
+ -moz-transform: translate(0);
+ -o-transform: translate(0);
+ -ms-transform: translate(0);
+}
+}
+@-webkit-keyframes 
+harlem {  0% {
+ transform: translate(0);
+ -webkit-transform: translate(0);
+ -moz-transform: translate(0);
+ -o-transform: translate(0);
+ -ms-transform: translate(0);
+}
+ 25% {
+ transform: translate(5px, 5px);
+ -webkit-transform: translate(5px, 5px);
+ -moz-transform: translate(5px, 5px);
+ -o-transform: translate(5px, 5px);
+ -ms-transform: translate(5px, 5px);
+}
+ 50% {
+ transform: translate(-5px, -5px);
+ -webkit-transform: translate(-5px, -5px);
+ -moz-transform: translate(-5px, -5px);
+ -o-transform: translate(-5px, -5px);
+ -ms-transform: translate(-5px, -5px);
+}
+ 75% {
+ transform: translate(2px, 2px);
+ -webkit-transform: translate(2px, 2px);
+ -moz-transform: translate(2px, 2px);
+ -o-transform: translate(2px, 2px);
+ -ms-transform: translate(2px, 2px);
+}
+ 100% {
+ transform: translate(0);
+ -webkit-transform: translate(0);
+ -moz-transform: translate(0);
+ -o-transform: translate(0);
+ -ms-transform: translate(0);
+}
+}
+
+.wrap > #checking:checked ~ .foot:hover #events {
+  background-image: url("images/aboutkjsce.jpg");
+}
+.wrap > #checking:checked ~ .eve:hover .text {
+    color: #fff;
+  display: block;
+}
+
+.wrap > #checking:checked ~ .eve:hover .last {
+  color: #fff;
+  display: block;
+}
+
+.wrap > #checking:checked ~ .eve:hover .ic {
+  margin-top: 25%;
+}
+
+.eve .text {
+  display: none;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.eve .last {
+  display: none;
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.eve .ic {
+  margin-top: 25%;
+}
+
+.eve .im {
+  margin-top: 10%;
+  width: 50%;
+}
+.wrap > #checking:checked ~ .eve:hover .squash {
+  margin-top: 10%;
+}
+.eve .athletic {
+  margin-top: 20%;
+}
+
+.eve .football {
+  margin-top: 20%;
+}
+
+.eve .basketball {
+  margin-top: 20%;
+  width: 70%;
+}
+
+.eve .carrom {
+  margin-top: 25%;
+}
+
+.eve .fencing {
+  width: 70%;
+  margin-top: 20%;
+}
+
+.eve .volleyball {
+  width: 40%;
+}
+
+.eve .tablet {
+  margin-left: -20px;
+  margin-top: 15px;
+}
+
+.eve .che {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+.eve .ten {
+  margin-left: 5px;
+  margin-top: 13px;
+}
+
+.eve .volleyb {
+  margin-left: -8px;
+  margin-top: 10px;
+}
+
+.eve .fence {
+  margin-top: 20px;
+}
+
+.eve .footb {
+  margin-top: 18px;
+}
+.eve .crick {
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+.eve .athlet {
+  margin-left: -10px;
+  margin-top: 18px;
+}
+
+.eve .kabad {
+  margin-top: 20px;
+}
+
+.eve .carr {
+  margin-top: 20px;
+}
+
+.eve .badmin {
+  margin-left: -7px;
+  margin-top: 10px;
+}
+
+.eve .rinkf {
+  margin-top: 5px;
+  margin-left: -5px;
+text-align: center;
+}
+
+.eve .ten {
+  margin-left: 10px;
+}
+
+.eve .tablet {
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.eve .basketb {
+  margin-left: -10px;
+  margin-top: 15px;
+}
+
+    .register:hover {
+      margin-left: -2px;
+    }
+
+    .reg a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .reg a:hover {
+      color: #fff;
+    }
+
+    .register {
+      padding-top: 7px;
+      padding-left: 5px;
+      font-size: 18px;
+      font-family: seg;
+      border-radius: 5px;
+        margin-top: 25vh;
+        position: fixed;
+        border: 1px solid black;
+        display: inline-block;
+        /*width: 180px;*/
+        height: 45px;
+        margin-left: -90px;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.7;
+        z-index: 30;
+        /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: margin-left;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    /* Standard syntax */
+    transition-property: margin-left;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    }
+    .reg {
+      display: inline-block;
+      color: #fff;
+      font-family: seg_bold;
+      width: auto;
+    }
+    .ister {
+      display: inline-block;
+      border: 1px solid black;
+      padding-right: 10px;
+    }
+    .regform {
+      width: 25px;
+    }
+
+
+
+    #about {
+      overflow: hidden;
+      height: auto;
+    }
+
+    .headkj {
+      margin-top: 50%;
+      color: #000;
+      /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: margin-top;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    /* Standard syntax */
+    transition-property: margin-top;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s; 
+    }
+    .headsk {
+      margin-top: 50%;
+      color: #000;
+      /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: margin-top;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    /* Standard syntax */
+    transition-property: margin-top;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s; 
+    }
+
+    .left:hover .headkj {
+      margin-top: 70px;
+    }
+
+    .right:hover .headsk {
+      margin-top: 70px;
+    }
+
+    .textb {
+      line-height: 0px;
+      color: transparent;
+      opacity: 0;
+      font-size: 20px;
+      font-family: seg;
+      -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ text-align: justify;
+    }
+    .texta {
+      line-height: 0px;
+      color: #000;
+      opacity: 0;
+      font-size: 20px;
+      font-family: seg;
+      -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ text-align: justify;
+    }
+
+    .left:hover .textb {
+      color: #000;
+      line-height: 33px;
+      opacity: 1;
+    }
+    .left {
+      height: 100vh;
+      margin-top: -150px;
+      padding-left: -10px;
+      background-image: url("images/kjsce1.jpg");
+      background-size: cover;
+    }
+    .right {
+      height: 100vh;
+      margin-top: -150px;
+      background:rgba(0,0,0,0.75) url("images/skream1.jpg");
+      background-size: cover;
+    }
+    .right:hover {
+      background-image: url("images/skream2.jpg");
+      background-size: cover;
+      color: #000;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .left:hover {
+      background-image: url("images/kjsce2.jpg");
+      background-size: cover;
+      color: #000;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .right:hover .texta {
+      color: #000;
+      line-height: 33px;
+      opacity: 1;
+    }
+
+    .right:hover .headsk {
+      width: 300px;
+      height: 80px;
+    }
+
+    .left:hover .headkj {
+      width: 300px;
+      height: 80px;
+    }
+
+    .headkj, .headsk {
+      width: 300px;
+      height: 80px;
+      background-color: rgba(255,255,255,0.5);
+      padding-top: 1px;
+      border-radius: 5px;
+    }
+
+    #menu {
+        z-index: 60;
+    }
+
+    #mascot {
+        background-color: #ef8e03;
+        background-image: url(images/mascot_bg.png);
+        background-size: cover;
+        overflow: hidden; 
+        color: #fff;
+    }
+    #mascot p {
+      font-size: 20px;
+    }
+    .mastext {
+      padding-right: 5%;
+    }
+
+    .text {
+      text-align: justify;
+    }
+
+.regbut p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.regbut p:before, .regbut p:after {
+color: #fff;
+content: "___";
+position: relative;
+top: -8px;
+font-weight: bold;
+}
+
+.regbut p:before {
+  right: 20px;
+}
+
+.regbut p:after {
+  left: 20px;
+}
+
+.regbut {
+  margin-top: 5%;
+}
+
+.logos {
+  width: 90%;
+}
+
+.strust {
+  width: 12%;
+  margin-left: 2%;
+}
+
+.head p {
+  font-family: seg;
+  font-size: 35px;
+}
+.kjname {
+  margin-left: 10%;
+  margin-top: 1%;
+}
+.strust, .kjname {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+.kjname {
+  width: 60%;
+}
+.regtp {
+  width: 40%;
+}
+
+
+.social-links {
+  list-style: none;
+  margin-left: -5%;
+}
+.social-links li {
+  display: inline-block;
+}
+.social-links li a {
+  display: block;
+  margin: 0 6px;
+}
+
+.sklogo .logo {
+  margin-left: 20px;
+}
+
+.evn {
+  margin-top: -10%;
+  color: #fff;
+}
+
+.modal-dialog {
+  margin-top: 3.5%;
+  width: 90%;
+  height: 60%;
+}
+
+.modal-header, .modal-footer {
+  border: 0px white;
+}
+
+.tab-content ul li p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.tab-content h4 {
+  font-family: seg_bold;
+  font-size: 17px;
+}
+
+.tab-content p {
+  font-size: 17px;
+}
+
+.tab-content ul li {
+  font-size: 17px;
+}
+
+.one {
+  margin-bottom: 2%;
+}
+
+.tab-content {
+  margin-top: 5%;
+  text-align: left;
+}
+
+.pill {
+  font-size: 20px;
+}
+
+.img {
+  width: 80%;
+}
+
+.red li.active a,
+.red li.active a:hover,
+.red li.active a:focus {
+    background-color: black;
+}
+
+.red li a {
+  color: #000;
+}
+
+.text {
+  font-family: seg;
+}
+
+#contact img {
+  margin-top: -5%;
+  width: 80%;
+}
+
+
+
+.gen {
+  margin-left: 80%;
+  margin-top: 75vh;
+}
+
+.rules {
+  width: 80%;
+  background-color: #F44336;
+  border: 2px solid #F44336;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#events {
+  padding-bottom: 15px;
+}
+
+.evn h1 {
+  font-family: seg_bold;
+}
+
+span {
+  font-family: seg_bold;
+}
+
+
+.phone_eve {
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  /*z-index: 10;*/
+  margin-left: 8%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -o-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -ms-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+.tag {
+  width: 80%;
+}
+
+.ph .eve .ten {
+  margin-left: 10px;
+}
+
+.phone .row {
+  height: 120px;
+}
+
+.dabba {
+  background-color: red;
+  height: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: white;
+  border: red;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.lk {
+  color: white;
+}
+
+.dabba p {
+  font-size: 17px;
+}
+
+  </style>
+  
+
+    <script type="text/javascript">
+  <!--
+  if (screen.width <= 800) {
+    document.location = "in.html";
+  }
+//-->
+</script>
+
+<script language=javascript>
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://www.kjsce-skream.org/in.html");
+}
+-->
+</script>
+
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!--<div id="socialside"></div>-->
+    <div class="register">
+      <div class="reg">
+        <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" target="_blank">REGISTER</a>&nbsp;&nbsp;
+      </div>
+      <div class="ister">
+        <img src="images/RegForm.svg" class="regform">
+      </div>
+    </div>
+        <!-- Header -->
+          <header id="header" class="alt">
+            <nav>
+              <a href="#menu">Menu</a>
+            </nav>
+          </header>
+
+        <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Menu</h2>
+                            <ul class="links">
+                              <li>
+                                    <a class="page-scroll" href="#intro">Home</a>
+                                </li>
+                                <li class="desk">
+                                    <a class="page-scroll" href="#about">About</a>
+                                </li>
+                                <li class="phone">
+                                    <a class="page-scroll" href="#abskream">About</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#mascot">Mascot</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#events">Events</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#sponsors">Sponsors</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#contact">Contact</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" target="_blank">Register</a>
+                                </li>           
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+
+<!-- Intro Section -->
+    <section id="intro" class="intro-section" style="background-image:url(images/header.jpg);background-size:cover;">
+            <div class="head">
+              <div class="logos">
+                <img src="images/somaiyalogos.svg" alt="" class="img-responsive strust">
+                <center><p>K.J. Somaiya College of Engineering, Vidyavihar, Mumbai</p></center>
+              </div>
+              
+                <div class="col-lg-6 col-sm-6 sklogo">
+                    <center><img src="images/skreamlogo.svg" class="img-responsive logo"></center>
+                </div>
+                <div class="col-lg-6 col-sm-6 regbut">
+                    <center><a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" target="_blank"><img src="images/REGISTER.svg" class="img-responsive regtp" onmouseover="this.src='images/REGISTER_HOVER.svg'" onmouseout="this.src='images/REGISTER.svg'"></a></center><br>
+                    <p><span>Follow Us</span></p>
+                    <center><ul class="social-links text-center">
+                      <li><a href="http://www.facebook.com/kjsceskream" target="_blank"><img src="images/new fb.svg" class="img-responsive insta"></a></li>
+                      <li><a href="http://www.twitter.com/kjscelive" target="_blank"><img src="images/new twitter.svg" class="img-responsive insta"></a></li>
+                      <li><a href="http://www.youtube.com/kjscelive" target="_blank"><img src="images/new yt.svg" class="img-responsive insta yt"></a></li>
+                      <li><a href="http://www.instagram.com/kjscelive" target="_blank"><img src="images/new insta.svg" class="img-responsive insta"></a></li>
+                  </ul></center><br/>
+                  <center><img src="images/tagline.svg" class="img-responsive tag"></center>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section desk">
+                <div class="desk left col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <center><div class="headkj">
+                      <h1>about <span>KJSCE</span></h1>
+                    </div></center>
+                    <div>&nbsp;</div>
+                    <div class="textb">
+                        <p class="text">K.J. Somaiya College of Engineering, located within the Somaiya campus at Vidyavihar, Mumbai is graded as 'A' by the NBA (National Board Of Accreditation). The Somaiya campus has more than 20,000 students in diverse disciplines like Engineering, Management, Commerce, Arts and Polytechnic. To cater to such a humongous need, we have a sprawling campus of over 65 acres in Vidyavihar, in the heart of Mumbai.
+A feather has been added to our cap, when we became the first Self-financed (private) Engineering College afiliated to University of Mumbai to get an Autonomous status. From the academic year 2014-15 our College has "Academic Autonomy", while continuing to be afiliated to University of Mumbai.</p>
+                    </div>
+                </div>
+                <div class="desk right col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <center><div class="headsk">
+                      <h1>about <span>SKREAM</span></h1>
+                    </div></center>
+                    <div>&nbsp;</div>
+                    <div class="texta">
+                        <p class="text">Skream, the annual sports meet of K.J. Somaiya College of Engineering, in its third year is now a popular sports festival. Achieving greater heights with amazing enthusiasm, the festival aims at testing your skills and providing a platform to showcase your talent in various sports at top class facilities provided by the college. KJSCE Skream became a national level sports meet last year, receiving participation from engineering colleges all around the country. Consisting of multiple events Skream is not just a festival but a lifestyle for Somaiyaites. Skream witnesses innovative and exciting events, colossal crowds and eminent personalities. So it is time to SKREAM again!</p>
+                    </div>
+                </div>
+    </section>
+    <section class="phone intro-section abskream" id="abskream">
+      <div class="col-sm-6 col-xs-12">
+        <br/>
+        <center><img src="images/kjsce1.jpg" class="img-responsive sk"></center>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <h2>About KJSCE</h2>
+        <p class="text">K.J. Somaiya College of Engineering, located within the Somaiya campus at Vidyavihar, Mumbai is graded as 'A' by the NBA (National Board Of Accreditation). The Somaiya campus has more than 20,000 students in diverse disciplines like Engineering, Management, Commerce, Arts and Polytechnic. To cater to such a humongous need, we have a sprawling campus of over 65 acres in Vidyavihar, in the heart of Mumbai.
+A feather has been added to our cap, when we became the first Self-financed (private) Engineering College afiliated to University of Mumbai to get an Autonomous status. From the academic year 2014-15 our College has "Academic Autonomy", while continuing to be afiliated to University of Mumbai.</p>
+      </div>
+
+    </section>
+    <section class="phone intro-section abskream" id="abskream">
+      <div class="col-sm-6 col-xs-12">
+        <center><img src="images/skream1.jpg" class="img-responsive sk"></center>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <h2>About SKREAM</h2>
+        <p class="text">Skream, the annual sports meet of K.J. Somaiya College of Engineering, in its third year is now a popular sports festival. Achieving greater heights with amazing enthusiasm, the festival aims at testing your skills and providing a platform to showcase your talent in various sports at top class facilities provided by the college. KJSCE Skream became a national level sports meet last year, receiving participation from engineering colleges all around the country. Consisting of multiple events such as football, cricket, squash and kabaddi, Skream is not just a festival but a lifestyle for Somaiyaites. Witnessing innovative and exciting events, colossal crowds and eminent personalities, Skream is the ultimate place to be for all sportspersons. So it is time to SKREAM again!</p>
+      </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="about-section" id="mascot">
+      <div class="col-sm-6 col-xs-12 masimg">
+        <center><img src="images/Phoenix Mascot 2.svg" class="img-responsive phoenix"></center>
+      </div>
+      <div class="col-sm-6 col-xs-12 mastext">
+        <h1><span>RAY</span> - The Phoenix</h1>
+        <p class="text">The official mascot of KJSCE Skream, Ray the Phoenix has risen from ashes and has now landed in KJSCE. Sports is all about passion, dedication, sacrifice. Lets hope that Ray who is epitome of all these qualities will ignite a fire within and develop a fighting character in sportsmen taking part in Skream 2016. So it's time to unleash the sporting spirit within!</p>
+        <p><span>Let the Fire Begin!</span></p>
+      </div>
+
+    </section>
+
+    <section id="events" class="contact-section"><!-- style="background-image:url(images/events_bg.jpg);background-size:cover;"-->
+        <div class="evn">
+        <h1>EVENTS</h1></div>
+        <div class="desk">
+        <main class='container even'>
+  <center><div class='wrap'>
+    <input type='checkbox' id='checking' style='display:none;' />
+    <div class='blob eve foot' data-toggle="modal" data-target="#football">
+      <img src="svgskreameventlist/Football.svg" class="im football">
+      <center><p class="text footb">Football</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#athletics">
+      <img src="svgskreameventlist/Athletics.svg" class="im athletic">
+      <center><p class="text athlet">Athletics</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#badminton">
+      <img src="svgskreameventlist/Badminton.svg" class="im">
+      <center><p class="text badmin">Badminton</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#basketball">
+      <img src="svgskreameventlist/Basketball.svg" class="im basketball">
+      <center><p class="text basketb">Basketball</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#carrom">
+      <img src="svgskreameventlist/Carrom.svg" class="im carrom">
+      <center><p class="text carr">Carrom</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#chess">
+      <img src="svgskreameventlist/Chess.svg" class="im">
+      <center><p class="text che">Chess</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#cricket">
+      <img src="svgskreameventlist/Cricket.svg" class="im football">
+      <center><p class="text crick">Cricket</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#fencing">
+      <img src="svgskreameventlist/Fencing.svg" class="im fencing">
+      <center><p class="text fence">Fencing</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#kabaddi">
+      <img src="svgskreameventlist/Kabaddi.svg" class="im fencing">
+      <center><p class="text kabad">Kabaddi</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#rinkfootball">
+      <img src="svgskreameventlist/RinkFootball.svg" class="im">
+      <center><p class="text rinkf">Rink Football</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#squash">
+      <center><p class="last">Squash</p></center>
+      <img src="svgskreameventlist/Squash.svg" class="im fencing squash">
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#tabletennis">
+      <img src="svgskreameventlist/TableTennis.svg" class="im fencing">
+      <center><p class="text tablet">Table Tennis</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#tennis">
+      <img src="svgskreameventlist/Tennis.svg" class="im">
+      <center><p class="text ten">Tennis</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#volleyball">
+      <img src="svgskreameventlist/Volleyball.svg" class="im volleyball">
+      <center><p class="text volleyb">Volleyball</p></center>
+    </div>
+    <div class='blob eve' data-toggle="modal" data-target="#myModal">
+      <p class="ic">&#x2605;</p>
+      <p class="text">TEXT</p>
+    </div>
+    <label class='blob' for='checking'> <span class='bar'></span> <span class='bar'></span> <span class='bar'></span> </label>
+  </div></center>
+
+    </main>
+</div>
+<div class="phone">
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-6 ph">
+    <center><div class="phone_eve eve" data-toggle="modal" data-target="#volleyball">
+      <img src="svgskreameventlist/Volleyball.svg" class="im volleyball">
+      <center><p class="text volleyb" style="display:block;color:#fff;">Volleyball</p></center>
+    </div></center>
+  </div>
+  <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#tennis">
+      <img src="svgskreameventlist/Tennis.svg" class="im">
+      <center><p class="text ten" style="display:block;color:#fff;">Tennis</p></center>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#tabletennis">
+      <img src="svgskreameventlist/TableTennis.svg" class="im fencing">
+      <center><p class="text tablet" style="display:block;color:#fff;">Table Tennis</p></center>
+    </div>
+  </div>
+<div class="col-xs-6 ph">
+  <div class='phone_eve eve foot' data-toggle="modal" data-target="#football">
+      <img src="svgskreameventlist/Football.svg" class="im football">
+      <center><p class="text footb" style="display:block;color:#fff;">Football</p></center>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#athletics">
+      <img src="svgskreameventlist/Athletics.svg" class="im athletic">
+      <center><p class="text athlet" style="display:block;color:#fff;">Athletics</p></center>
+    </div>
+  </div>
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#badminton">
+      <img src="svgskreameventlist/Badminton.svg" class="im">
+      <center><p class="text badmin" style="display:block;color:#fff;">Badminton</p></center>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#basketball">
+      <img src="svgskreameventlist/Basketball.svg" class="im basketball">
+      <center><p class="text basketb" style="display:block;color:#fff;">Basketball</p></center>
+    </div>
+  </div>
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#carrom">
+      <img src="svgskreameventlist/Carrom.svg" class="im carrom">
+      <center><p class="text carr" style="display:block;color:#fff;">Carrom</p></center>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#chess">
+      <img src="svgskreameventlist/Chess.svg" class="im">
+      <center><p class="text che" style="display:block;color:#fff;">Chess</p></center>
+    </div>
+  </div>
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#cricket">
+      <img src="svgskreameventlist/Cricket.svg" class="im football">
+      <center><p class="text crick" style="display:block;color:#fff;">Cricket</p></center>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#fencing">
+      <img src="svgskreameventlist/Fencing.svg" class="im fencing">
+      <center><p class="text fence" style="display:block;color:#fff;">Fencing</p></center>
+    </div>
+  </div>
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#kabaddi">
+      <img src="svgskreameventlist/Kabaddi.svg" class="im fencing">
+      <center><p class="text kabad" style="display:block;color:#fff;">Kabaddi</p></center>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#rinkfootball">
+      <img src="svgskreameventlist/RinkFootball.svg" class="im">
+      <center><p class="text rinkf" style="display:block;color:#fff;">Rink Football</p></center>
+    </div>
+  </div>
+    <div class="col-xs-6 ph">
+    <div class='phone_eve eve' data-toggle="modal" data-target="#squash">
+      <img src="svgskreameventlist/Squash.svg" class="im fencing squash">
+      <center><p class="text ten" style="display:block;color:#fff;">Squash</p></center>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <div class="gen">
+    <button class="rules" data-toggle="modal" data-target="#rule">Rules</button>
+  </div>
+          
+
+        <!-- Modal -->
+        <div class="modal fade" id="rule">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    
+                      <ul class="nav nav-pills nav-justified red">
+                      <li class="active"><a data-toggle="tab" href="#gen_rule" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#con_rule" class="tab pill">CONTINGENCY</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="gen_rule" class="tab-pane fade in active">
+                          <ul>
+                            <li>Registrations will be done on first come first serve basis.</li>
+                            <li>Last date for registering entry: 29th Jan 2016.</li>
+                            <li>The draws are made by the committee and cannot be changed or questioned.</li>
+                            <li>Receipts, individual I-cards and the team/player bonafied should be carried every match.</li>
+                            <li>A maximum of 15 mins from the reported time will be tolerated following which the team/player will be eliminated.</li>
+                            <li>Refree/Umpire decisions will be final and abiding under any circumstances.</li>
+                            <li>All awards will be given during the closing ceremony. The winners must be present to collect their prize.</li>
+                            <li>Organising Committee of Skream reserves the right to debar the team/player if they are found to misbehave or violate the rules.</li>
+                            <li>The rights to dismiss the event, change the rules/prize money only in case of less than minimum no. of teams required lies with the organising committee.</li>
+                          </ul>
+                      </div>
+                      <div id="con_rule" class="tab-pane fade">
+                        <h4>Team points:</h4>
+                          <ul>
+                            <li>Each contingent for every team sports.</li>
+                            <li>Participation will be awarded 5 points.</li>
+                            <li>Each contingent will be awarded 2 points for their team reporting on time per match.</li>
+                            <li>The winning team will be awarded 20 points.</li>
+                            <li>The runner up team will be awarded 10 points.</li>
+                            <li>Each special award given to the players of any team will be given 3 points .(player of tournament etc.)</li>
+                            <li>Fairplay winning team will be awarded 10 points.</li>
+                          </ul>
+                          <h4>Individual points:</h4>
+                          <ul>
+                            <li>Each player from any contingent will be awarded 3 point for participation.</li>
+                            <li>The winning player will be awarded 10 points.</li>
+                            <li>The runner up player will be awarded 5 points.</li>
+                          </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="tabletennis">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/TableTennis.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <center><ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#tabletennis_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#tabletennis_con" class="tab pill">CONTACT</a></li>
+                    </ul></center>
+  
+                    <div class="tab-content">
+                      <div id="tabletennis_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Any number of Re(net) serves are allowed.</b></li>
+                            <li><b>For serving, the ball has to be tossed with open palm, a minimum 6 inches. From the start of  service until it is struck, the ball has to be above the level of the playing surface and behind the servers end line, and it cannot be hidden from the receiver by the server. Ball once tossed has to be served else point is lost.</b></li>
+                            <li><b>Bat touch is allowed but body touch is considered a violation.</b><br/><br/><p>BOYS</p></li>
+                            <li><b>All matches will be played as a best of 5 games between 3 players from each team.</b></li>
+                            <li><b>Top 2 players from each team will play reverse singles. (XYZ v/s ABC : XvA, YvB, XvB, YvA, ZvC)</b></li>
+                            <li><b>Teams can have up to 4 players.</b></li>
+                            <li><b>Each team is allowed to take one time-out per MATCH lasting up to 1 minute.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.500/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.4,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.2,000/-</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>Individual knockout format.</li>
+                            <li><b>Match format will be Best of 3 games (11 points).</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.100/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.1,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.400/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="tabletennis_con" class="tab-pane fade">
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Chirag: 9757084146</b></p>
+                          <p><b>Shreyas Seshadri: 9820526497</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="chess">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Chess.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#chess_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#chess_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="chess_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Open for both boys and girls.</b></li>
+                            <li><b>A Swiss League Tournament will be conducted comprising of 4 rounds. (If situation demands, the number of rounds may vary, decision regarding which will be taken by the Event Head.)</b></li>
+                            <li><b>Each match will be of 50 minutes (25 each side).</b></li>
+                            <li><b>In case of tie after the final round, the winner will be declared on the basis of progressive rating/ rBH.</b></li>
+                            <li><b>The player has to report within 15 minutes of the given time, failing which the opponent will be awarded a bye.</b></li>
+                            <li><b>All standard rules apply.</b></li>
+                            <li><b>The players are requested to get their Chess Set along.</b></li>
+                            <li><b>Decision of the event head stands final.</b><br/><b>Chess boards and Chess clocks will be provided(but do carry if you have it).</b></li>
+                            <li><b>Minimum no of entries: 30</b></li>
+                            <li><b>Entry Fee:Rs.50/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.1,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.600/-<br/>&nbsp;&nbsp;
+                            Female Top Scorer-Rs.400/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="chess_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Jay Maru: 8082673525</b></p>
+                          <p><b>Purva Sawant: 7208596476</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="badminton">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Badminton.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#badminton_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#badminton_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="badminton_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Tournament progresses as knockout rounds.</b></li>
+                            <li><b>5 minutes will be allotted to the team to practice/warm up before their match.</b></li>
+                            <li><b>All shuttle changes will be made only after consulting the match referee.</b></li>
+                            <li><b>All players should wear nonmarking sole shoes ONLY on the court.</b><br/><br/><p>BOYS</p></li>
+                            <li><b>Only one of three players can play two matches.</b></li>
+                            <li><b>Order of play - 1st singles, then doubles, 2nd singles.</b></li>
+                            <li><b>All matches will be best of 3. Each of 21 points.</b></li>
+                            <li><b>Team should decide order of play before match starts.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry Fee:Rs.500/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.3,500/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,500/-</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>Singles and doubles formats.</b></li>
+                            <li><b>All matches will be of 1 game (21 points).</b></li>
+                            <li><b>Minimum no of entries: 16(singles) 12(doubles)</b></li>
+                            <li><b>Entry Fee:Rs.50/-(singles) Rs.100/-(doubles)</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.1,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.500/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="badminton_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Deeksha Razdan: 9757119121</b></p>
+                          <p><b>Vama Shah: 9967118841</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="tennis">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Tennis.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#tennis_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#tennis_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="tennis_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Only Singles event – best of 15 games upto semis.</b></li>
+                            <li><b>From semis best of 3 sets.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry Fee:Rs.200/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.3,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,500/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="tennis_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Aditya P: 9920433285</b></p>
+                          <p><b>Shivam P: 9757374616</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="rinkfootball">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/RinkFootball.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#rinkfootball_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#rinkfootball_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="rinkfootball_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>No. of players are 4+2 subs.</b></li>
+                            <li><b>Rolling substitutions are allowed.</b></li>
+                            <li><b>Half length is of 7 minutes.</b></li>
+                            <li><b>The goalkeeper is not allowed to use hands to stop any shots.</b></li>
+                            <li><b>Goals will be allowed only from ahead of the half-line.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry Fee:Rs.500/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.3,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,500/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="rinkfootball_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Rajat Menon: 9594656578</b></p>
+                          <p><b>Swaroop Swami: 9029837313</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="fencing">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Fencing.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#fencing_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#fencing_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="fencing_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Fencers have to carry their own equipments.</b></li>
+                            <li><b>Only Foil boys event will be conducted.</b></li>
+                            <li><b>Matches will be of league type.</b></li>
+                            <li><b>Matches will be conducted on manual piste.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.300/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.3,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,500/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="fencing_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Kuldeep: 8655520146</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="carrom">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Carrom.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#carrom_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#carrom_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="carrom_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Queen retains 3 points.</b></li>
+                            <li><b>No shaking of chair after match starts.</b></li>
+                            <li><b>Touching of coins while picking striker is considered a foul.</b></li>
+                            <li><b>All University rules are applicable.</b><br/><br/><p>BOYS</p></li>
+                            <li><b>Both singles and doubles event.</b></li>
+                            <li><b>Tournament will be held in direct knockout format.</b></li>
+                            <li><b>Minimum no of entries: 16(both singles and doubles)</b></li>
+                            <li><b>Entry Fee:Rs.100/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.1,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.500/-(both singles and doubles)</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>Only singles event.</b></li>
+                            <li><b>Tournament will be held in direct knockout format.</b></li>
+                            <li><b>Minimum no of entries: 8(both singles and doubles)</b></li>
+                            <li><b>Entry Fee:Rs.50/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.500/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.200/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="carrom_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Abhishek Bharambe: 9923230599</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="basketball">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Basketball.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#basketball_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#basketball_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="basketball_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Latest rules laid down by the federation will be followed.</b><br/><br/><p>BOYS</p></li>
+                            <li><b>A team of 12 members (5+7)for boys  must be submitted to KJSCE authorities at the time of registration.</b></li>
+                            <li><b>Tournament will be held in direct knockout format.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry Fee:Rs.1,200/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.10,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.5,000/-</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>5-a-side format( Team of min-5. Max- 12.)</b></li>
+                            <li><b>Tournament will be held in direct knockout format.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.700/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.5,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.2,000/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="basketball_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <h5>BOYS:</h5>
+                          <p><b>Sanjay Kumar: 9220107876</b></p>
+                          <p><b>Jugal Shah: 9930892774</b></p><br/>
+                          <h5>GIRLS:</h5>
+                          <p><b>Himani Shetty: 9004198197</b></p>
+                          <p><b>Saumya Kamde: 9321898070</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="cricket">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Cricket.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#cricket_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#cricket_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="cricket_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Team squad will be of 11+3(Total 14 players).</b></li>
+                            <li><b>6 over matches will be played.</b></li>
+                            <li><b>It will be a Knockout Tournament.</b></li>
+                            <li><b>Bowling Restriction:- Total of 4 bowlers will be used. Any 2 bowlers can bowl a maximum of 2 overs. Other bowlers can bowl maximum 1 over.</b></li>
+                            <li><b>1st over will be compulsory Powerplay in which only 3 players can be placed outside the inner circle.</b></li>
+                            <li><b>Superover will be played in case of a drawn match.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry Fee:Rs.1,100/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.8,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.3,000/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="cricket_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Gaurang Patel: 8793638893</b></p>
+                          <p><b>Apurva Popat: 9757404014</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="volleyball">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Volleyball.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#volleyball_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#volleyball_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="volleyball_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Team squad will be of 6+6(Total 12 players).</b></li>
+                            <li><b>There will be best of three set match.</b></li>
+                            <li><b>First and second set will be of 25 points and third will be of 15 points.</b></li>
+                            <li><b>If one fails to toss the ball for the service he will be warned for the first chance and after that it will be considered as point.</b></li>
+                            <li><b>The game will be of rotation type.</b></li>
+                            <li><b>All University Rules Applicable.</b><br/><br/><p>BOYS</p></li>
+                            <li><b>Minimum no of entries: 16</b></li>
+                            <li><b>Entry Fee:Rs.1,000/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.8,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.4,000/-</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>Minimum no of entries: 5</b></li>
+                            <li><b>Entry Fee:Rs.400/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.2,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,000/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="volleyball_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <h5>BOYS:</h5>
+                          <p><b>Harsh V: 9860988990</b></p>
+                          <p><b>Palak Nagda: 9757035034</b></p><br/>
+                          <h5>GIRLS:</h5>
+                          <p><b>Urvashi Kokate: 9920913995</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="football">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Football.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#football_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#football_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="football_gen" class="tab-pane fade in active">
+                          <ul>
+                            <p><b>BOYS</b></p>    
+                            <li><b>No. of players per team: 11+5</b></li>
+                            <li><b>Rolling substitutions are allowed.</b></li>
+                            <li><b>Half length: 20 minutes with a break of 5 minutes between halves.</b></li>
+                            <li><b>Offside rule is applicable.</b></li>
+                            <li><b>All teams are requested to give a complete list of their 16 man squad when they report for their first match. Change in squad for rest of the tournament will result in disqualification.</b></li>
+                            <li><b>Minimum no of entries: 20</b></li>
+                            <li><b>Entry Fee:Rs.2,500/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.22,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.12,000/-</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>No. of players: 7+3 (Min: 7)</b></li>
+                            <li><b>10 minutes half with a break of 5 minutes between halves.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.800/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.4,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.2,000/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="football_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <h5>BOYS:</h5>
+                          <p><b>Gaurav Soni: 9819983934</b></p>
+                          <p><b>Dhwanil Parikh: 9769740060</b></p>
+                          <p><b>Manan Mehta: 9702600260</b></p>
+                          <p><b>Aditya Kadam: 9167481618</b></p><br/>
+                          <h5>GIRLS:</h5>
+                          <p><b>Sakshi Keste: 9403157567</b></p>
+                          <p><b>Jil Shah: 9004869444</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="squash">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Squash.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#squash_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#squash_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="squash_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Basic rounds- Best of 3 games: 11 points each game.</b></li>
+                            <li><b>Semi finals and finals: Best of 3, 15 points each game.</b></li>
+                            <li><b>Maximum 2 minute timeout after every game.</b></li>
+                            <li><b>Medical timeout of 7 minutes or opponent gets a bye. Only medical timeout can be taken.</b></li>
+                            <li><b>Only squash balls will be provided by the organising committee. Rest of all the equipments should be brought by the player.</b></li>
+                            <li><b>Proper attire and non marking squash shoes are compulsory.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.200/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.2,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,000/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="squash_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Mihir Gandhi: 9920093704</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="kabaddi">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Kabaddi.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#kabaddi_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#kabaddi_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="kabaddi_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>Team of 7+5(12 max)</b></li>
+                            <li><b>The competitors should wear number on both the side of their jersey/shirts.</b></li>
+                            <li><b>The team should report to the Tournament Secretary for the game at least 15 minutes prior to the commencement of the game.</b></li>
+                            <li><b>The team is not ready to start the game within 5 minutes of the time scheduled for play the opposite team may given a walk-over.</b></li>
+                            <li><b>Latest rules as adopted by the Amateur Kabaddi Federation of India shall be followed.</b></li>
+                            <li><b>Minimum no of entries: 8</b></li>
+                            <li><b>Entry Fee:Rs.600/-</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            Winner-Rs.3,000/-<br/>&nbsp;&nbsp;
+                            Runner up-Rs.1,500/-</b></li>
+                          </ul>
+                      </div>
+                      <div id="kabaddi_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Shrenik Kuwad: 8879291195</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="athletics">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                <div class="modal-body">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 one">
+                      <center><img src="images/events/Athletics.jpg" class="img"></center>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 coll">
+                      <ul class="nav nav-pills red">
+                      <li class="active"><a data-toggle="tab" href="#athletics_gen" class="tab pill">GENERAL</a></li>
+                      <li><a data-toggle="tab" href="#athletics_con" class="tab pill">CONTACT</a></li>
+                    </ul>
+  
+                    <div class="tab-content">
+                      <div id="athletics_gen" class="tab-pane fade in active">
+                          <ul>
+                            <li><b>All University rules applicable.</b></li>
+                            <li><b>Proper running shoes are necessary.</b><br/><p>BOYS</p></li>
+                            <li><b>100 M, 200 M, 400 M, 800 M, Relay and shotput are the athletic events included.</b></li>
+                            <li><b>Minimum no of entries: 20 per event</b></li>
+                            <li><b>Entry fee: Rs.100/- per person per event. (Except relay) Relay: Rs.200/- per team of 4.</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            1st Prize-Rs.500/-<br/>&nbsp;&nbsp;
+                            2nd Prize-Rs.200/-<br/>&nbsp;&nbsp;
+                            3rd Prize-only medal<br/><br/>&nbsp;&nbsp;
+                             RELAY(Girls)-<br/>&nbsp;&nbsp;
+                            1st Prize-Rs.1,000/-<br/>&nbsp;&nbsp;
+                            2nd Prize-Rs.400/-</b></li>
+                            <li><b>All 3 places will be awarded with medals.</b><br/><br/><p>GIRLS</p></li>
+                            <li><b>100 M, 200 M, relay and shotput are the events included.</b></li>
+                            <li><b>Minimum no of entries: 12</b></li>
+                            <li><b>Entry fee: Rs.50/- per person per event. ( Except relay) Relay: Rs.100/- per team of 4.</b></li>
+                            <li><b>Prize Money:<br/>&nbsp;&nbsp;
+                            1st Prize-Rs.500/-<br/>&nbsp;&nbsp;
+                            2nd Prize-Rs.200/-<br/>&nbsp;&nbsp;
+                            3rd Prize-only medal</b></li>
+                            <li><b>All 3 places will be awarded with medals.</b></li>
+                          </ul>
+                      </div>
+                      <div id="athletics_con" class="tab-pane fade">
+                          <br/>
+                          <h4>Event Co-ordinator:</h4>
+                          <br/>
+                          <p><b>Viraj Sule: 9930582375</b></p>
+                          <p><b>Aneesh Sule: 9167194874</b></p>
+                          <br/><br/>
+                          <a href="https://docs.google.com/forms/d/1-zdO35eegyuW8j31h3nI1caZxvGFPoO7FFbXTrOM1jk/viewform?c=0&w=1&usp=mail_form_link" class="lk" target="_blank"><button class="dabba">Register</button></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </section>
+
+    <section id="sponsors" style="height:auto;padding-bottom:2%">
+        <div class="container">
+          <center><h1>SPONSORS</h1></center><br/>
+            <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                <h4>Co-Sponsored by</h4>
+                <center><div class="member-thumb">
+                  <center><img src="tsg.png" alt="Sponsor" class="img-responsive" width="40%"></center>
+                </div></center>
+              </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                <h4>Media Partner</h4>
+                <center><div class="member-thumb">
+                  <center><img src="zee.png" alt="Sponsor" class="img-responsive" width="35%"></center>
+                </div></center>
+              </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                <h4>Associate Partner</h4>
+                <center><div class="member-thumb">
+                  <center><img src="tcc.jpg" alt="Sponsor" class="img-responsive" width="50%"></center>
+                </div></center>
+              </figure>
+            </div><br/>
+            <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Fitness Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="POwerhouse Gym.png" alt="Sponsor" class="img-responsive" width="40%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Online Media Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><a href="http://www.faadooengineers.com" target="_blank"><img src="Fadoo Engineers.png" alt="Sponsor" class="img-responsive" width="70%"></a></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Online Media Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><a href="http://www.knowafest.com" target="_blank"><img src="knowafest.jpg" alt="Sponsor" class="img-responsive" width="70%"></a></center>
+                  </div></center>
+                </figure>
+            </div><br/>
+            <div class="row">
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Online Publicity Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><a href="http://www.allevents.in" target="_blank"><img src="All Events.png" alt="Sponsor" class="img-responsive" width="50%"></a></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Sporting Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="sports gully.png" alt="Sponsor" class="img-responsive" width="40%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Magazine Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="Youth I.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+            </div><br/>
+            <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Media Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="free-press.png" alt="Sponsor" class="img-responsive" width="70%"></center>
+                  </div></center>
+                </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Media Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="mumbai-messenger.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Event Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="rush.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                
+            </div><br/>
+            <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Game Shop Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="emart.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                <h4>Goods Partner</h4>
+                <center><div class="member-thumb">
+                  <center><img src="tennex.png" alt="Sponsor" class="img-responsive" width="70%"></center>
+                </div></center>
+              </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Student Oppurtunity Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><a href="http://www.twenty19.com" target="_blank"><img src="Twenty19.png" alt="Sponsor" class="img-responsive" width="70%"></a></center>
+                  </div></center>
+                </figure>
+            </div><br/>
+            <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Drinking Water Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="Cista.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Print Media Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="maharashtra.jpg" alt="Sponsor" class="img-responsive" width="70%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>PS Arena Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="ps.jpg" alt="Sponsor" class="img-responsive" width="60%"></center>
+                  </div></center>
+                </figure>
+            </div><br/>
+            <div class="row">
+              <figure class="team-member col-lg-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4>Local Magazine Partner</h4>
+                  <center><div class="member-thumb">
+                    <center><img src="living-local.jpg" alt="Sponsor" class="img-responsive" width="25%"></center>
+                  </div></center>
+                </figure>
+            </div>
+            <div class="row">
+              <center><h3>Other Partners</h3></center><br/>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms" style="padding-top:2%">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="tga_logo.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="5ive logo.jpg" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  
+                  <center><div class="member-thumb">
+                    <center><img src="Logo.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+              </div><br/>
+              <div class="row">
+              <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="metro-builders.jpg" alt="Sponsor" class="img-responsive" width="100%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="rite-bite.jpg" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="paintball.jpg" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+            </div>
+              <div class="row">
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms" style="padding-top:2%">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="Redbull.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="decathlon.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+                <figure class="team-member col-lg-4 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="relispray.png" alt="Sponsor" class="img-responsive" width="50%"></center>
+                  </div></center>
+                </figure>
+            </div><br/><br/>
+            <div class="row">
+              <figure class="team-member col-lg-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                  <h4></h4>
+                  <center><div class="member-thumb">
+                    <center><img src="vikas-construction.png" alt="Sponsor" class="img-responsive" width="20%"></center>
+                  </div></center>
+                </figure>
+            </div><br/>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" style="background-color: #9CAABD;background-image: url(images/contact_bg.png);background-size: cover;overflow: hidden;">
+        <div class="container-fluid">
+            <div class="row cont">
+                <div class="col-lg-12">
+                    <center><img src="images/contactdetailslaptop.svg" class="img-responsive contac desk"></center>
+                    <center><img src="images/contactdetailsmobile.svg" class="img-responsive contac phone"></center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+      <script src="js/bootstrap.min.js"></script>
+
+      <!-- Scrolling Nav JavaScript -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+  </body>
+</html>
